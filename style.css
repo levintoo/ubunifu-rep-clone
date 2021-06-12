@@ -1,0 +1,261 @@
+:root{
+    --time :3s ;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #F8F9FA;
+    position: relative;
+}
+.body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vh;
+    height: 90vh;
+    overflow: hidden;
+}
+.body h1{
+    font-size: 60px;
+    animation: body var(--time);
+}
+.btn{
+    width: 100;
+    font-size: medium;
+    animation: body var(--time);
+}
+.body p{
+    margin: 1rem;
+    font-size: medium;
+    animation: body var(--time);
+}
+.monkey{
+    position: fixed;
+    top: -5rem;  
+    left: -30vh; 
+    width: 31rem;
+    height: 24rem;
+    animation: monkey var(--time);
+}
+.moringa{
+    position: fixed;
+    top: 0rem;  
+    right: 3vh; 
+    width: 24rem;
+    height: 22rem;
+    animation: moringa var(--time);
+}
+@keyframes monkey {
+    from{
+        transform: rotate(-150deg);
+        left: -60vh;
+    }
+    to{
+        transform: rotate(0deg);
+    }}
+    @keyframes moringa {
+        from{
+            transform: rotate(100deg);
+            top: -70vh;
+            right: -80vh;
+        }
+        to{
+            
+
+        }}
+@keyframes body{
+    from{
+        font-size: 0px;
+    }
+}
+.papers{
+    position: absolute;
+    bottom: -55vh;
+    width: 42rem;
+    height: 46.5rem;
+    left: -17rem;
+    animation: papers var(--time);
+
+}
+@keyframes papers {
+    from{
+        transform: rotate(100deg);
+        bottom: -40vh;
+        left: -90vh;
+    }
+    to{
+        transform: rotate(0deg);
+    }}
+.tablet{
+    position: absolute;
+    width: 35rem;
+    height: 25rem;
+    right: -17rem;
+    bottom: -7rem;
+    animation: tablet var(--time);
+
+}
+@keyframes tablet {
+    from{
+
+        transform: rotate(-90deg);
+        right: -120vh;
+    }
+    to{
+        transform: rotate(0deg);
+    }}
+.pin1{
+    position: absolute;
+    left: 19rem;
+    bottom: 10rem;
+    width: 2.5rem;
+    height: 4.5rem;
+    animation: pin1 var(--time);
+}
+@keyframes pin1{
+    from{
+        left: 15rem;
+        bottom: -10rem;
+        transform: rotate(-360deg);
+    }
+}
+@keyframes pin2{
+    from{
+        left: 15rem;
+        bottom: -10rem;
+        transform: rotate(360deg);
+    } 
+to{
+
+}}
+.pin2{
+    position: absolute;
+    left: 16rem;
+    bottom: 12rem;
+    width: 2.5rem;
+    height: 4.5rem;
+    transform: rotate(125deg);
+    animation: pin2 var(--time);
+}
+
+.marker1{
+    position: absolute;
+    width: 10rem;
+    height: 14rem;
+    left: 6rem;
+    bottom: 3.5rem;
+    animation: marker1 var(--time);
+}
+@keyframes marker1 {
+    from{
+
+        transform: rotate(180deg);
+        bottom: -90vh;
+    }
+    to{
+        
+    }}
+.blackpen{
+    position: absolute;
+    width: 14rem;
+    height: 24rem;
+    right: 11rem;
+    bottom: 0rem;
+    animation: blackpen var(--time);
+}
+@keyframes blackpen {
+    from{
+
+        transform: rotate(180deg);
+        right: -50vh;
+    }
+    to{
+        transform: rotate(0deg);
+    }}
+.marker2{
+    position: absolute;
+    width: 15rem;
+    height: 13rem;
+    transform: rotate(-10deg);
+    left: 9rem;
+    bottom: -4rem;
+    animation: marker2 var(--time);
+}
+@keyframes marker2 {
+    from{
+
+        transform: rotate(180deg);
+        left: -60vh;
+        bottom: -100vh;
+    }
+    to{
+       
+    }}
+/* .dot{
+    position: absolute;
+    bottom: 10%;
+    width: 2.5rem;
+    height: 2.6rem;
+    border: 2px solid #000;
+    border-radius: 40%;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+} 
+ .dot p{
+    font-weight: 700;
+    font-size: 1.875rem;
+    text-align: center;
+} */
+
+
+
+/* center text */
+.design {
+    animation: design var(--time);
+    font-size: 0px;
+}
+.build{
+    animation: build var(--time);
+    font-size: 0px;
+}
+.launch{
+    animation: launch var(--time);
+}
+@keyframes design {
+    30%{
+        font-size: 60px;
+    }
+    60%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 0px;
+    }
+}
+@keyframes build {
+    30%{
+        font-size: 0px;
+    }
+    60%{
+        font-size: 60px;
+    }
+    100%{
+        font-size: 0px;
+    }
+}
+@keyframes launch {
+    30%{
+        font-size: 0px;
+    }
+    60%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 60px;
+    }
+    
+}
