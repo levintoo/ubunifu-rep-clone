@@ -215,15 +215,15 @@ to{
 
 /* center text */
 .design {
-    animation: design var(--time);
+    animation: design 4s;
     font-size: 0px;
 }
 .build{
-    animation: build var(--time);
+    animation: build 4s;
     font-size: 0px;
 }
 .launch{
-    animation: launch var(--time);
+    animation: launch 4s;
 }
 @keyframes design {
     30%{
